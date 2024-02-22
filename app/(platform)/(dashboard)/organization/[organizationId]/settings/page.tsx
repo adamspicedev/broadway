@@ -1,4 +1,3 @@
-import React from "react";
 import { OrganizationProfile } from "@clerk/nextjs";
 
 const SettingsPage = () => {
