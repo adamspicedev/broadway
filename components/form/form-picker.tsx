@@ -5,11 +5,9 @@ import Image from "next/image";
 import { Check, Loader2 } from "lucide-react";
 import { useFormStatus } from "react-dom";
 import { useEffect, useState } from "react";
-
 import { cn } from "@/lib/utils";
 import { unsplash } from "@/lib/unsplash";
 import { defaultImages } from "@/constants/images";
-
 import { FormErrors } from "./form-errors";
 
 interface FormPickerProps {
