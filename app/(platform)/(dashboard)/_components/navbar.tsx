@@ -1,8 +1,10 @@
+import { Plus } from "lucide-react";
+import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
+
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
-import { Plus } from "lucide-react";
-import MobileSidebar from "./mobile-sidebar";
+
+import { MobileSidebar } from "./mobile-sidebar";
 
 export const Navbar = () => {
   return (
@@ -12,27 +14,13 @@ export const Navbar = () => {
         <div className="hidden md:flex">
           <Logo />
         </div>
-        <Button
-          size="sm"
-          variant="primary"
-          className="rounded-sm hidden md:block h-auto py-1.5 px-2"
-        >
-          Create
-        </Button>
-        <Button
-          size="sm"
-          variant="primary"
-          className="rounded-sm block md:hidden"
-        >
-          <Plus className="h-4 w-4" />
-        </Button>
       </div>
-      <div className="ml-auto flex items-center gsp-x-2">
+      <div className="ml-auto flex items-center gap-x-2">
         <OrganizationSwitcher
           hidePersonal
-          afterSelectOrganizationUrl="/organization/:id"
           afterCreateOrganizationUrl="/organization/:id"
           afterLeaveOrganizationUrl="/select-org"
+          afterSelectOrganizationUrl="/organization/:id"
           appearance={{
             elements: {
               rootBox: {

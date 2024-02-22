@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import { use, useEffect, useState } from "react";
 import { Sidebar } from "./sidebar";
 
-const MobileSidebar = () => {
+export const MobileSidebar = () => {
   const pathname = usePathname();
   const [isMounted, setIsMounted] = useState(false);
 
@@ -44,5 +44,3 @@ const MobileSidebar = () => {
     </>
   );
 };
-
-export default MobileSidebar;
