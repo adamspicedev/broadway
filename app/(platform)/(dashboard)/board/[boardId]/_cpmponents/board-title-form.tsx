@@ -53,6 +53,11 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
   };
 
   const onBlur = () => {
+    if (inputRef.current?.value === title) {
+      disableEditing();
+      return;
+    }
+
     formRef.current?.requestSubmit();
   };
 
