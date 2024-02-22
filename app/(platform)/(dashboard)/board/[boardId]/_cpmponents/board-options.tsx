@@ -3,7 +3,7 @@
 import { toast } from "sonner";
 import { MoreHorizontal, X } from "lucide-react";
 
-import { deleteBoard } from "@/actions/delete-board";
+import { deleteBoard } from "@/actions/board/delete";
 import { useAction } from "@/hooks/use-action";
 import { Button } from "@/components/ui/button";
 import {

@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { ElementRef, useRef } from "react";
 import { toast } from "sonner";
-import { createBoard } from "@/actions/create-board";
+import { createBoard } from "@/actions/board/create";
 import {
   Popover,
   PopoverClose,
